@@ -1,0 +1,45 @@
+//Faça um programa que mostre ao usuário um menu com 4 opções
+//de operações matemáticas (as básicas, por exemplo). O usuário
+//escolhe uma das opções e o seu programa então pede dois valores
+//numéricos e realiza a operação, mostrando o resultado e saindo.
+
+#include<stdio.h>
+#include<stdlib.h>
+int main()
+{
+        char operacao;
+        float numero1, numero2;
+
+        printf("Escolha a operacao:\n");
+        printf("[1] adicao\n");
+        printf("[2] subtracao\n");
+        printf("[3] multiplicacao\n");
+        printf("[4] divisao\n");
+        printf("digite o a operação desejada:\n");
+        scanf("%c",&operacao);
+
+        printf("Digite o primeiro numero: ");
+        scanf("%f",&numero1);
+        printf("Digite o primeiro numero: ");
+        scanf("%f",&numero2);
+
+        switch( operacao )
+        {
+            case '1':
+                printf("%.2f + %.2f = %.2f\n", numero1, numero2, (numero1 + numero2));
+                break;
+            case '2':
+                printf("%.2f - %.2f = %.2f\n", numero1, numero2, (numero1 - numero2));
+                break;
+            case '3':
+                printf("%.2f * %.2f = %.2f\n", numero1, numero2, (numero1 * numero2));
+                break;
+            case '4':
+                printf("%.2f / %.2f = %.2f\n", numero1, numero2, (numero1 / numero2));
+                break;
+            default:
+                printf("Operacao.\n");
+
+        }
+       
+}
