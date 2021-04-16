@@ -1,0 +1,31 @@
+//Escreva um algoritmo que leia certa quantidade de números e
+//imprima o maior deles e quantas vezes o maior número foi lido. A
+//quantidade de números a serem lidos deve ser fornecida pelo
+//usuário.
+
+
+#include<stdio.h>
+#include<stdlib.h>
+
+int main (){
+        
+        int numero;
+        int numero1;
+        int vesses;
+        float contador;
+      
+        
+        printf("digite quantos numeros vc quer ler:\n");
+        scanf("%d", &numero);
+        printf("digite um numero:\n");
+        scanf("%d", &numero1);
+        
+        for (contador=1; contador<numero1; contador++){
+                printf("digite um numero:\n");
+                scanf("%f", &contador);
+        for (contador=1; contador<numero1; contador++)        
+        if (contador>numero1)
+             numero1==contador;
+        }
+        
+      
