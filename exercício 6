@@ -1,0 +1,36 @@
+//Dados três valores, A, B, C, verificar se eles podem ser valores dos
+//lados de um triângulo e, se forem, se é um triângulo escaleno,
+//equilátero ou isóscele, considerando os seguintes conceitos:
+//O comprimento de cada lado de um triângulo é menor do que a
+//soma dos outros dois lados.
+//Chama-se equilátero o triângulo que tem três lados iguais.
+//Denominam-se isósceles o triângulo que tem o comprimento de dois
+//lados iguais.
+//Recebe o nome de escaleno o triângulo que tem os três lados
+//diferentes.
+
+#include<stdio.h>
+#include<stdlib.h>
+
+int main (){
+        float A;
+        float B;
+        float C;
+        
+        printf("digite o primeiro valor:\n");
+        scanf("%f", &A);
+        printf("digite o segundo valor:\n");
+        scanf("%f", &B);
+        printf("digite o terceiro valor:\n");
+        scanf("%f", &B);
+        
+         if((A<0)|(B<0)|(C<0));
+                 else if((A==B)&(A==C)&(B==C)){
+                 printf("equilatero\n");
+                } else if((A==B)&(A==C)|(B==C)){
+                 printf("isosceles\n");
+                }else if((A!=B)&(A!=B)&(A!=B)){
+                 printf ("escaleno\n");
+                }
+        
+}
